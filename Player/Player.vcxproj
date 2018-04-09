@@ -94,6 +94,7 @@
     <Link>
       <SubSystem>Windows</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>winmm.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
@@ -147,8 +148,10 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="Componet.h" />
     <ClInclude Include="Player.h" />
     <ClInclude Include="resource.h" />
+    <ClInclude Include="resource1.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
   </ItemGroup>
@@ -165,8 +168,10 @@
     <ResourceCompile Include="Player.rc" />
   </ItemGroup>
   <ItemGroup>
-    <Image Include="Player.ico" />
-    <Image Include="small.ico" />
+    <Image Include="..\..\..\..\Desktop\Capture.PNG" />
+    <Image Include="..\..\..\..\Desktop\x.bmp" />
+    <Image Include="..\debug\images\bitmap1.bmp" />
+    <Image Include="..\Debug\images\logo.ico" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
